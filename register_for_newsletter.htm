@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="code.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Sign Up for newletters and updates</title>
+<style>
+ /* The Close Button */
+.close,.close1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+	cursor: pointer;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.or {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 1px #cccccc inset;
+    left: 240px;
+    padding: 8px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+	display: flex;
+	flex-direction: column;
+}
+.text
+{
+left: 310px;
+top:205px;
+position: absolute;
+text-align:center;
+	display: flex;
+	flex-direction: column;
+
+}
+div{
+display: block;}
+PopSocialLogin {
+    border-left: 1px,solid,#f2f2f2;
+    float: left;
+    margin: 21px 0;
+    padding: 31px 0 38px 35px;
+    position: relative;
+}
+.PopSocialLogin div
+{
+float: left;
+}
+span{
+float: left;
+
+vertical align: baseline;}
+
+#bg-modal
+  {
+  float: left;
+  left:467px;
+  top: 328px;
+  background-color:rgba(0,0,0,0);
+  position:absolute;
+  display: block;
+  justify-content:center;
+  align-items:center;
+  }
+.modal-content{
+  float: left;
+  padding: 10px 0 20px;
+  width: 500px; 
+  height:325px;
+  background-color:;
+  border radius:4px;
+  text-align:left;
+  padding:20px;
+  }
+  .button
+  {
+  color: #191970;
+  background-color: #DAA520;
+  }
+  
+</style>
+</head>
+<body onload="bodyonload()">
+<div class="header">
+<div class="fadebg" style="height: 3175px; display: none;"></div>
+
+<a href="https://instagram.com/_chivalric12" title="Follow me on Instagram" alt="Follow me on Instagram" target="_blank" class="mhc yt fl sp"></a>
+<img src="contact.png" height="20" width="20" align="right" hspace="5" title="Contact Us">
+<button id="myBtn">Login</button>
+<img src="cart.png" height="30" width="30" align="right" hspace="5" title="Cart">
+<img src="instagram.jpg" height="20" width="20" align="right" hspace="5" title="Follow me on instagram">
+<img src="facebook.png" height="20" width="20" align="right" hspace="5" title="Follow me on facebook">
+<img src="twitter.jpg" height="20" width="20" align="right" hspace="5" title="Follow me on twitter">
+<img src="LinkedIn.png" height="20" width="20" align="right" hspace="5" title="Follow me on LinkedIn">
+
+<h1><font color="white" face="Monotype Corsiva" >Shivali's&nbsp;&nbsp;Gallery</font></h1>
+<a href="www.ShivaliArtGallery.com"><font color="white" face="Comic Sans MS Header">www.ShivaliArtGallery.com</font></a>
+<div class="right">
+<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+<input type="text" placeholder="Enter keywords" name="Enter keywords" align="right-side">
+<button type="search"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>
+<div class="topnav">
+ <a href="chivalric.html"><b><font color="white" size="4px">Home</font><b></a>
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()"><b><font color="white" size="4px">About Gallery</font></b>
+     <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+	  <a href="know_the_artist.htm">Know The Artist</a>
+      <a href="#">Recent Additions</a>
+      <a href="#">Ordering & Buying</a>
+      <a href="#">Payment</a>
+	  <a href="#">Gallery Pictures</a>
+    </div>
+  </div>
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction1()"><b><font color="white" size="4px"> Featured Art-works</font></b>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown1">
+      <a href="#">Paintings</a>
+      <a href="#">Doodles</a>
+      <a href="#">Portrait</a>
+    </div>
+  </div>
+  <a href="#"><b><font color="white" size="4px">Art Marketplace</font><b></a>
+  <a href="#"><b><font color="white" size="4px">Videos</font></b></a>
+  <a href="subscribe_for_newsletters.html"><b><font color="white" size="4px">Register for News Letters</font></b></a>
+  <a href="#"><b><font color="white" size="4px">Blog</font></b></a>
+  <a href="#"><b><font color="white" size="4px">Reach Me</font></b></a>
+  </div>
+  
+   <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown1 = document.getElementById("myDropdown");
+      if (myDropdown1.classList.contains('show')) {
+        myDropdown1.classList.remove('show');
+      }
+  }}</script>
+  <center>
+<div class="container">
+<div class="LEPNEW" style="margin-bottom: 0px;">
+  <h1>Newsletters & Updates<hr style="border:1px dashed #443185;"></h1>
+  
+  </div>
+</div>
+</center>
+    <!-- Modal Section-->
+   <div id="bg-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <center><img src="login.png">
+                <br>
+                <font size="3" color="Black" face="Comic Sans MS Header">Sign up for free Newsletters and Updates</font><br>
+                <hr>
+            </center>
+            <font color=rgb(135, 206, 250)>
+                <div><input type="text" placeholder="Name"><br><br></div>
+                <div><input type="text" placeholder="Email"><br><br></div>
+                <div>
+                    <div><input type="text" placeholder="Mobile"><br><br></div>
+                    <div><input type="submit" value="Sign Up" class="button" /></div>
+                </div>
+                <div class="PopSocialLogin">
+                    <span class="or">OR</span>
+                    <div class="text">
+                        <font color="Black" face="Comic Sans MS Header">Connect with:&nbsp;</font>
+                    </div>
+                    <i class="fa fa-facebook-official w3-hover-opacity" style="font-size:15px;color:#87CEFA;left:325px;top:230px;position:absolute" onclick="window.open(" https://www.facebook.com/")"> </i> <i class="fa fa-google-plus-official" style="font-size:15px;color:red;left:345px;top:230px;position:absolute" onclick="window.open(" https://plus.google.com/discover ")"></i>
+            </font>
+            </div>
+        </div>
+    </div>
+<script>
+// Get the modal
+var modal = document.getElementById('bg-modal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	
+</body>
+</html>
